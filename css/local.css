@@ -1,0 +1,22 @@
+.btn-outline-dark-blue {
+    margin-bottom: .375rem;
+    vertical-align: top;
+}
+
+.btn-outline-dark-blue {
+    color: #003C71;
+    border-color: #003C71;
+}
+
+
+.btn-outline-dark-blue:not(:disabled):not(.disabled):active, .btn-outline-dark-blue:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #003C71;
+    border-color: #003C71;
+}
+
+.btn-outline-dark-blue:hover {
+    color: #fff;
+    background-color: #003C71;
+    border-color: #003C71;
+}

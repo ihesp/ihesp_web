@@ -1,0 +1,1003 @@
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>rof</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../../../../index.html">iHESP</a>
+    </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav">
+          <li >
+		  <a href="../index.html">About</a>
+          </li>        
+          <li >
+            <a href="../atm/index.html">Atmosphere Data</a>
+          </li>
+          <li >
+            <a href="../ice/index.html"><span>Ice Data</span></a>
+          </li>
+          <li >
+            <a href="../lnd/index.html"><span>Land Data</span></a>
+          </li>
+          <li >
+            <a href="../ocn/index.html"><span>Ocean Data</span></a>
+          </li>
+          <li  class="active">
+            <a href="index.html"><span>River Run-off Data</span></a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+<div class="container-fluid">
+    <div id="tabs">
+        <h2>Monthly River Run-off Data Page</h2>
+          <ul>
+            <li><a href="index.html#tabs-1">Global Attributes</a></li>
+            <li><a href="index.html#tabs-2">Dimension Shape</a></li>
+            <li><a href="index.html#tabs-3">Variable Information</a></li>
+            <li><a href="index.html#tabs-4">Download Links</a></li>
+          </ul> 
+  <div id="tabs-1">
+   <h2><i class="glyphicon glyphicon-globe"></i> Global Attributes  <span class="badge" data-toggle="tooltip" data-placement="top" title="The total number of global attributes of this dataset is 13">13</span></a></li></h2>
+      <hr/>
+   <table class="table table-bordered table-striped">
+    <thead>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><strong>title</strong></td>
+            <td>RTM History file information</td>
+        </tr>
+        
+        <tr>
+            <td><strong>comment</strong></td>
+            <td>NOTE: None of the variables are weighted by land fraction!</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Conventions</strong></td>
+            <td>CF-1.0</td>
+        </tr>
+        
+        <tr>
+            <td><strong>history</strong></td>
+            <td>Mon May 24 17:33:26 2021: ncap2 -O -s time=array(31,1,$time) /scratch/group/ihesp/archive/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rtm/monthly/cmpr_B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF.rtm.h0.2006-01.nc /scratch/group/ihesp/archive/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rtm/monthly/cmpr_B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF.rtm.h0.2006-01.nc\ncreated on 04/08/20 15:44:02</td>
+        </tr>
+        
+        <tr>
+            <td><strong>source</strong></td>
+            <td>Community Land Model CLM4.0</td>
+        </tr>
+        
+        <tr>
+            <td><strong>hostname</strong></td>
+            <td>sunway</td>
+        </tr>
+        
+        <tr>
+            <td><strong>username</strong></td>
+            <td>cesm01</td>
+        </tr>
+        
+        <tr>
+            <td><strong>version</strong></td>
+            <td>cesm1_3_beta17</td>
+        </tr>
+        
+        <tr>
+            <td><strong>revision_id</strong></td>
+            <td>$Id: histFileMod.F90 36692 2012-04-27 18:39:55Z tcraig $</td>
+        </tr>
+        
+        <tr>
+            <td><strong>case_title</strong></td>
+            <td>UNSET</td>
+        </tr>
+        
+        <tr>
+            <td><strong>case_id</strong></td>
+            <td>B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF</td>
+        </tr>
+        
+        <tr>
+            <td><strong>RTM_input_dataset</strong></td>
+            <td>rdirc_0.5x0.5_simyr2000_slpmxvl_c120717.nc</td>
+        </tr>
+        
+        <tr>
+            <td><strong>NCO</strong></td>
+            <td>netCDF Operators version 4.9.7 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco)</td>
+        </tr>
+        
+    </tbody>
+  </table>     
+  </div>
+    
+  <div id="tabs-2">
+    <h2><i class="glyphicon glyphicon-th"></i> 
+        <a name="dim_home"></a>Dimension Shape
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The total number of dimension variables of this dataset is 13">13</span></h2>
+      <hr/>
+      <div class="well">
+      
+      <a href="index.html#time"><button type="button" class="btn btn-default">time</button></a>
+      
+      <a href="index.html#lon"><button type="button" class="btn btn-default">lon</button></a>
+      
+      <a href="index.html#lat"><button type="button" class="btn btn-default">lat</button></a>
+      
+      <a href="index.html#hist_interval"><button type="button" class="btn btn-default">hist_interval</button></a>
+      
+      <a href="index.html#string_length"><button type="button" class="btn btn-default">string_length</button></a>
+      
+      <a href="index.html#string1"><button type="button" class="btn btn-default">string1</button></a>
+      
+      <a href="index.html#mcdate"><button type="button" class="btn btn-default">mcdate</button></a>
+      
+      <a href="index.html#mcsec"><button type="button" class="btn btn-default">mcsec</button></a>
+      
+      <a href="index.html#mdcur"><button type="button" class="btn btn-default">mdcur</button></a>
+      
+      <a href="index.html#mscur"><button type="button" class="btn btn-default">mscur</button></a>
+      
+      <a href="index.html#nstep"><button type="button" class="btn btn-default">nstep</button></a>
+      
+      <a href="index.html#time_bounds"><button type="button" class="btn btn-default">time_bounds</button></a>
+      
+      <a href="index.html#fthresh"><button type="button" class="btn btn-default">fthresh</button></a>
+      
+      </div>
+      <hr/>
+      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="time"></a>time <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of time is 120">120</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">time</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">days since 2006-01-01 00:00:00</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>calendar</strong></td>
+            <td class="col-sm-9">noleap</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>bounds</strong></td>
+            <td class="col-sm-9">time_bounds</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="lon"></a>lon <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of lon is 720">720</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">runoff coordinate longitude</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">degrees_east</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="lat"></a>lat <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of lat is 360">360</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">runoff coordinate latitude</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">degrees_north</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="hist_interval"></a>hist_interval <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of hist_interval is 2">2</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>WARNING</strong></td>
+            <td class="col-sm-9">does not contain variable attributes</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="string_length"></a>string_length <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of string_length is 8">8</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>WARNING</strong></td>
+            <td class="col-sm-9">does not contain variable attributes</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="string1"></a>string1 <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of string1 is 1">1</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>WARNING</strong></td>
+            <td class="col-sm-9">does not contain variable attributes</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="mcdate"></a>mcdate <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of mcdate is 120">120</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(int32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">current date (YYYYMMDD)</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="mcsec"></a>mcsec <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of mcsec is 120">120</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(int32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">current seconds of current date</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">s</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="mdcur"></a>mdcur <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of mdcur is 120">120</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(int32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">current day (from base day)</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="mscur"></a>mscur <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of mscur is 120">120</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(int32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">current seconds of current day</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="nstep"></a>nstep <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of nstep is 120">120</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(int32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">time step</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="time_bounds"></a>time_bounds <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of time_bounds is 240">240</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float64)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">history time interval endpoints</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#dim_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+      </a>
+        <a name="fthresh"></a>fthresh <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of fthresh is 259200">259200</span>
+    </h2>
+        
+  </div>
+  <div class="panel-body">
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>_FillValue</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">flooding threshold</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">m3</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>missing_value</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+
+    </div>
+    
+  <div id="tabs-3">
+    <h2><i class="glyphicon glyphicon-eye-open"></i>
+        <a name="var_home"></a>Variables Information 
+            <span class="badge" data-toggle="tooltip" data-placement="top" title="The total number of variables in this dataset is 6">6</span>
+    </h2>
+    <hr/>
+      <div class="well">
+      
+      <a href="index.html#time_written"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Size: 960  Dimensions: (time, string_length, string1)">time_written</button></a>
+      
+      <a href="index.html#QCHANR"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Size: 31104000  Dimensions: (time, lat, lon)">QCHANR</button></a>
+      
+      <a href="index.html#QCHANR_ICE"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Size: 31104000  Dimensions: (time, lat, lon)">QCHANR_ICE</button></a>
+      
+      <a href="index.html#QCHOCNR_ICE"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Size: 31104000  Dimensions: (time, lat, lon)">QCHOCNR_ICE</button></a>
+      
+      <a href="index.html#QCHOCNR"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Size: 30844800  Dimensions: (time, lat, lon)">QCHOCNR</button></a>
+      
+      <a href="index.html#date_written"><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Size: 960  Dimensions: (time, string_length, string1)">date_written</button></a>
+      
+      </div>
+      <hr/>
+      
+
+      
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#var_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+        </a>        
+        <a name="time_written"></a>
+        time_written (time, string_length, string1)
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of time_written is 960">960</span>
+    </h2>
+  </div>
+  <div class="panel-body">    
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(S1)</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+ 
+        
+      
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#var_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+        </a>        
+        <a name="QCHANR"></a>
+        QCHANR (time, lat, lon)
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of QCHANR is 31104000">31104000</span>
+    </h2>
+  </div>
+  <div class="panel-body">    
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>_FillValue</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">RTM river flow: LIQ</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">m3/s</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>cell_methods</strong></td>
+            <td class="col-sm-9">time: mean</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>missing_value</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+ 
+        
+      
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#var_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+        </a>        
+        <a name="QCHANR_ICE"></a>
+        QCHANR_ICE (time, lat, lon)
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of QCHANR_ICE is 31104000">31104000</span>
+    </h2>
+  </div>
+  <div class="panel-body">    
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>_FillValue</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">RTM river flow: ICE</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">m3/s</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>cell_methods</strong></td>
+            <td class="col-sm-9">time: mean</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>missing_value</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+ 
+        
+      
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#var_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+        </a>        
+        <a name="QCHOCNR_ICE"></a>
+        QCHOCNR_ICE (time, lat, lon)
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of QCHOCNR_ICE is 31104000">31104000</span>
+    </h2>
+  </div>
+  <div class="panel-body">    
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>_FillValue</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">RTM river discharge into ocean: ICE</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">m3/s</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>cell_methods</strong></td>
+            <td class="col-sm-9">time: mean</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>missing_value</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+ 
+        
+      
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#var_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+        </a>        
+        <a name="QCHOCNR"></a>
+        QCHOCNR (time, lat, lon)
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of QCHOCNR is 30844800">30844800</span>
+    </h2>
+  </div>
+  <div class="panel-body">    
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(float32)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>_FillValue</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>long_name</strong></td>
+            <td class="col-sm-9">RTM river discharge into ocean: LIQ</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>units</strong></td>
+            <td class="col-sm-9">m3/s</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>cell_methods</strong></td>
+            <td class="col-sm-9">time: mean</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>missing_value</strong></td>
+            <td class="col-sm-9">1e+36</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+ 
+        
+      
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="panel-title">
+        <a href="index.html#var_home">
+            <i class="glyphicon glyphicon-menu-up float-right"></i> 
+        </a>        
+        <a name="date_written"></a>
+        date_written (time, string_length, string1)
+        <span class="badge" data-toggle="tooltip" data-placement="top" title="The size of date_written is 960">960</span>
+    </h2>
+  </div>
+  <div class="panel-body">    
+   <table class="table table-sm table-striped">
+    <tbody>
+        
+        <tr>
+            <td class="col-sm-3"><strong>type</strong></td>
+            <td class="col-sm-9">dtype(S1)</td>    
+        </tr>
+        
+        <tr>
+            <td class="col-sm-3"><strong>_FillValue</strong></td>
+            <td class="col-sm-9">b1</td>    
+        </tr>
+        
+    </tbody>
+  </table>  
+  </div>
+</div>      
+ 
+        
+  </div>
+
+  <div id="tabs-4">
+  <div class="well">
+       <h2><i class="glyphicon glyphicon-exclamation-sign"></i> Data Notes</h2>
+              
+        <ul>
+	    <li>The river run-off variables do not contain month 2075-06, due to hardware failures. There is no placeholder data for the missing data.</li>
+       </ul>
+       
+       </div>
+      <hr/>
+    <h2><i class="glyphicon glyphicon-download"></i> Download links</h2>
+      <hr/>
+      <h3><i class="glyphicon glyphicon-arrow-right"></i><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/catalog.html" target="_blank"><img style="height:80px;padding:20px;" src="../images/OPeNDAP.png" alt="OPeNDAP"/></a></h3>
+      <hr/>
+      <div class="well">
+          <p>
+          To download all the files automatically with wget, please download the <a href="rof_list.txt" download><span class="label label-info">rof file list</span></a> and run with <code>wget -i rof_list.txt</code> or 
+          <code>cat rof_list.txt | parallel --gnu "wget {}"</code> to use <a href="https://www.gnu.org/software/parallel/">GNU Parallel</a> to download the files in parallel.
+          </p>
+      </div>         
+
+    </br>
+      You also have the option to browse and download variables selectively using the links provided for each variable
+
+   <div class="well">
+   <table class="table table-sm table-striped">
+           <thead>
+                   <td class="col-4"><strong>Variable</strong></td><td class="col-4"><strong>Size X Type</strong></td><td class="col-6"><strong>Description</strong></td><td class="col-4"><strong>Data Coverage</strong></td><td class="col-2"><strong>Download link</strong></td>
+          </thead>
+    <tbody>
+       
+      <tr class="d-flex">
+            <td name="time_written" class="col-4"><strong>time_written</strong>  (time, string_length, string1)</td>
+            <td class="col-4">960 X  (S1)</td>
+            <td class="col-6"> </td>
+            <!--   <td class="col-2"></td> -->
+	     <td class="col-4">  2006-01 - 2102-02  </td>
+            <td class="col-2"><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/time_written/catalog.html" style="text-decoration: underline;color:blue;" target="_blank">THREDDS</a></td>
+
+        </tr>
+        
+      <tr class="d-flex">
+            <td name="QCHANR" class="col-4"><strong>QCHANR</strong>  (time, lat, lon)</td>
+            <td class="col-4">31104000 X  (float32)</td>
+            <td class="col-6"> RTM river flow: LIQ  (m3/s) </td>
+            <!--   <td class="col-2"> m3/s</td> -->
+	     <td class="col-4">  2006-01 - 2102-02  </td>
+            <td class="col-2"><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/QCHANR/catalog.html" style="text-decoration: underline;color:blue;" target="_blank">THREDDS</a></td>
+
+        </tr>
+        
+      <tr class="d-flex">
+            <td name="QCHANR_ICE" class="col-4"><strong>QCHANR_ICE</strong>  (time, lat, lon)</td>
+            <td class="col-4">31104000 X  (float32)</td>
+            <td class="col-6"> RTM river flow: ICE  (m3/s) </td>
+            <!--   <td class="col-2"> m3/s</td> -->
+	     <td class="col-4">  2006-01 - 2102-02  </td>
+            <td class="col-2"><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/QCHANR_ICE/catalog.html" style="text-decoration: underline;color:blue;" target="_blank">THREDDS</a></td>
+
+        </tr>
+        
+      <tr class="d-flex">
+            <td name="QCHOCNR_ICE" class="col-4"><strong>QCHOCNR_ICE</strong>  (time, lat, lon)</td>
+            <td class="col-4">31104000 X  (float32)</td>
+            <td class="col-6"> RTM river discharge into ocean: ICE  (m3/s) </td>
+            <!--   <td class="col-2"> m3/s</td> -->
+	     <td class="col-4">  2006-01 - 2102-02  </td>
+            <td class="col-2"><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/QCHOCNR_ICE/catalog.html" style="text-decoration: underline;color:blue;" target="_blank">THREDDS</a></td>
+
+        </tr>
+        
+      <tr class="d-flex">
+            <td name="QCHOCNR" class="col-4"><strong>QCHOCNR</strong>  (time, lat, lon)</td>
+            <td class="col-4">30844800 X  (float32)</td>
+            <td class="col-6"> RTM river discharge into ocean: LIQ  (m3/s) </td>
+            <!--   <td class="col-2"> m3/s</td> -->
+	     <td class="col-4">  2006-01 - 2102-02  </td>
+            <td class="col-2"><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/QCHOCNR/catalog.html" style="text-decoration: underline;color:blue;" target="_blank">THREDDS</a></td>
+
+        </tr>
+        
+      <tr class="d-flex">
+            <td name="date_written" class="col-4"><strong>date_written</strong>  (time, string_length, string1)</td>
+            <td class="col-4">960 X  (S1)</td>
+            <td class="col-6"> </td>
+            <!--   <td class="col-2"></td> -->
+	     <td class="col-4">  2006-01 - 2102-02  </td>
+            <td class="col-2"><a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/B.E.13.BRCP85C5CN.ne120_t12.sehires38.003.sunway.CN_OFF/rof/date_written/catalog.html" style="text-decoration: underline;color:blue;" target="_blank">THREDDS</a></td>
+
+        </tr>
+        
+    </tbody>
+  </table>
+   </div>
+
+
+  </div>
+          
+</div>
+<div class="well" style="text-align: center">
+<a href="http://tamu.edu" rel="noopener noreferrer" target="_blank">Texas A&amp;M University</a>&nbsp;
+<a href="http://itaccessibility.tamu.edu/">Accessibility</a>&nbsp;
+<a href="http://www.tamu.edu/statements/index.html" rel="noopener noreferrer" target="_blank">Policies</a>
+<a href="http://www.texas.gov/">State of Texas</a>&nbsp;
+<a href="http://publishingext.dir.texas.gov/portal/internal/resources/DocumentLibrary/State%20Website%20Linking%20and%20Privacy%20Policy.pdf">State Link Policy</a>
+<br/><br/>
+<a href="http://www.tamus.edu/">Texas&#160;A&amp;M University is a member of the Texas&#160;A&amp;M University System</a>
+</div>
+    <div class="container" style="text-align: center">
+        <a href="../../../../../index.html" target="_blank" title="iHESP"><img style="height:150px;padding:20px;"
+									    src="../images/iHESP.png"
+                                                                          alt="iHESP"/></a> 
+        <a href="http://tamu.edu" target="_blank" title="TAMU"><img style="height:150px;padding:20px;"
+                                                                          src="../images/TAMU.png"
+                                                                          alt="TAMU"/></a> 
+        <a href="https://ncar.ucar.edu" target="_blank" title="NCAR"><img style="height:150px;padding:20px;"
+                                                                          src="../images/NCAR.png"
+                                                                          alt="NCAR"/></a> 
+        <a href="../../../../../index.html" target="_blank" title="QNLM"><img style="height:150px;padding:20px;"
+                                                                          src="../images/QNLM.png"
+                                                                          alt="QNLM"/></a> 
+          
+</div>  
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script>
+      $( function() {
+        $( "#tabs" ).tabs();
+      } );
+    </script>        
+</body>
+</html>

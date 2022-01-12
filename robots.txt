@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /google40103c72b01b9cff.html
+Disallow: /error.html
+Sitemap: https://{site}/sitemap.xml
